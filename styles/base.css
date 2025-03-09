@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+font{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* Style the body to give it a basic background color and font */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.above-header {
+    background-color: #ff9d00;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    flex-shrink: 0;
+}
+
+header {
+    display: flex;
+    background-color: #f603b9;
+    color: white;
+    padding: 15px 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header-item {
+    padding: 10px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-content {
+    padding: 0px;
+    flex: 3;
+    border-radius: 2rem;
+    border-style:solid;
+    
+}
+
+.aside-content {
+    padding: 0px;
+    flex: 1;
+    margin-left: 20px;
+    border-radius: 2rem;
+    border-style:solid;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+footer {
+    background-color:#ff9d00;
+    color: white;
+    padding: 15px 20px;
+    justify-content: center;
+    display:flex;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+h2 {
+    background-color:blueviolet;
+    border-radius: 30px 30px 0 0;
+    color:white;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+h3 {
+    text-align: center;
+    padding: 0px;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-text-container-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-direction: row-reverse;
+ }
+
+ .me {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: contain;
+ }
+
+.flag-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+figure {
+    text-align: center;
+    margin: 20px;
+    font-style:italic;
+}
+p {
+    flex: 1;
+    line-height: 1.6;
+}
+
+hr {
+    border: 0;
+    /* Remove default border */
+    border-top: 2px solid #333;
+    /* Add a solid line */
+    width: 80%;
+    /* Adjust the width */
+    margin: 20px auto;
+    /* Center the line and add some spacing around it */
+}
+
+.footer-item {
+    margin-bottom: 5px;
+}
