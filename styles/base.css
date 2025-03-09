@@ -6,8 +6,7 @@
 
 font{
     font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight:400;
     font-style: normal;
 }
 
@@ -21,7 +20,7 @@ body {
 }
 
 .above-header {
-    background-color: #ff9d00;
+    background-color: #7a4b00;
     padding: 20px;
     text-align: center;
     font-size: 18px;
@@ -31,11 +30,12 @@ body {
 
 header {
     display: flex;
-    background-color: #f603b9;
+    background-color: #7f3972;
     color: white;
     padding: 15px 20px;
     justify-content: space-between;
     text-align: center;
+    text-decoration: none;
 }
 
 .header-item {
@@ -67,12 +67,11 @@ header {
     border-style:solid;
     justify-content:center;
     align-items: center;
+    text-decoration:none;
 }
 
-
-
 footer {
-    background-color:#ff9d00;
+    background-color:#7a4b00;
     color: white;
     padding: 15px 20px;
     justify-content: center;
@@ -89,7 +88,7 @@ input[type="text"] {
 }
 
 h2 {
-    background-color:blueviolet;
+    background-color: #452b45;
     border-radius: 30px 30px 0 0;
     color:white;
     padding: 15px;
@@ -154,4 +153,9 @@ hr {
 
 .footer-item {
     margin-bottom: 5px;
+}
+
+header nav a {
+    color:inherit;
+    text-decoration: none;
 }
