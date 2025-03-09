@@ -162,3 +162,16 @@ header nav a {
     color:inherit;
     text-decoration: none;
 }
+
+nav a {
+    text-decoration: none;
+    color: #452b45;
+    padding: 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color:goldenrod;
+    background-color:#333;
+    border-radius: 5px;
+}
