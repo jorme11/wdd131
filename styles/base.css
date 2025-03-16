@@ -194,11 +194,13 @@ footer {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+}
 
-    .footer-item {
-        margin-bottom: 5px;
-    }
+.footer-item {
+    margin-bottom: 5px;
+}
 
-    .footer-item:last-child {
-        flex: 1 1 100%;
-        text-align: center;
+.footer-item:last-child {
+    flex: 1 1 100%;
+    text-align: center;
+}
