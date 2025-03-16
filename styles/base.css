@@ -74,14 +74,6 @@ header {
     text-emphasis-color: black;
 }
 
-footer {
-    background-color:#7a4b00;
-    color: white;
-    padding: 15px 20px;
-    justify-content: center;
-    display:flex;
-}
-
 input[type="text"] {
     padding: 10px;
     font-size: 16px;
@@ -175,9 +167,6 @@ hr {
     /* Center the line and add some spacing around it */
 }
 
-.footer-item {
-    margin-bottom: 5px;
-}
 
 header nav a {
     color:inherit;
@@ -196,3 +185,20 @@ nav a:hover {
     background-color:#333;
     border-radius: 5px;
 }
+
+footer {
+    background-color: #7a4b00;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    .footer-item {
+        margin-bottom: 5px;
+    }
+
+    .footer-item:last-child {
+        flex: 1 1 100%;
+        text-align: center;
