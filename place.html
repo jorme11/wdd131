@@ -22,7 +22,11 @@
     <main>
         <div class="container">
             <div class="image-container">
-                    <img src="images/brazil.webp" alt="Brazil">
+                    <img src="images/brazil-small.jpg" srcset="images/brazil-large.jpg 1200w, 
+                                 images/brazil-medium.jpg 800w, 
+                                 images/brazil-small.jpg 400w" sizes="(max-width: 600px) 400px, 
+                                (max-width: 1200px) 800px, 
+                                1200px" alt="Brazil">
             </div>
         </div>
         <div class="info-container">
@@ -40,7 +44,7 @@
             <div class="info-box">
                 <h2>Weather</h2>
                     <div class="weather">
-                        <img src="images/weather.png" alt="Weather" class="weather icon">
+                        <img src="images/weather.svg" alt="Weather" class="weather icon">
                 <p>Temperature: <span id="temperature">5°C</span></p>
                 <p>Conditions: Partly Cloudy</p>
                 <p>Wind Speed: <span id="wind-speed">20 km/h</span></p>
