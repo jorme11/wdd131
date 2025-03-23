@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Place</title>
+    <meta name="author" content="Jessica Orme">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap"
+        rel="stylesheet">
+    <script src="place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+        <div class="container">
+            <div class="image-container">
+                    <img src="images/brazil1.jpg" alt="Brazil">
+            </div>
+        </div>
+        <div class="info-container">
+        <div class="info-box">
+                <h2>Data</h2>
+                <p>Area: 8,515,767 sq km</p>
+                <p>Population: over 212 million</p>
+                <p>Capital: Brasilia</p>
+                <p>Languages: Portuguese</p>
+                <p>Currency: Brazillian Real</p>
+                <p>Time Zone: UTC-5, UTC-4, UTC3, UTC-2 </p>
+                <p>Calling Code: +55 </p>
+                <p>Internet TLD: .br</p>
+            </div>
+            <div class="info-box">
+                <h2>Weather</h2>
+                    <div class="weather">
+                        <img src="images/weather.png" alt="Weather" class="weather icon">
+                <p>Temperature: <span id="temperature">5°C</span></p>
+                <p>Conditions: Partly Cloudy</p>
+                <p>Wind Speed: <span id="wind-speed">20 km/h</span></p>
+                <p>Wind Chill: <span id="wind-chill">4.8°C</span></p>
+                    </div>
+            </div>
+        </div>
+    <footer>
+        <p>© <span id="currentyear"></span> Jessica Orme | USA</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+ 
+</body>
+</html>

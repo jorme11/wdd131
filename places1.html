@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Place</title>
+    <meta name="author" content="Jessica Orme">
+    <link rel="stylesheet" href="styles/places1.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="places1.html" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+
+    <!-- Image Grid with srcset for responsiveness -->
+    <div class="image-grid">
+        <img src="images/brazil1.jpg" alt="Brazil" class="background-image"
+            srcset="images/brazil-small.jpg 600w, images/brazil-medium.jpg 1000w, images/brazil-large.jpg 1600w"
+            sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 100vw">
+    </div>
+
+    <section id="Data">
+        <h2>Data</h2>
+        <p>Area: 8,515,767 sq km</p>
+        <p>Population: over 212 million</p>
+        <p>Capital: Brasilia</p>
+        <p>Languages: Portuguese</p>
+        <p>Currency: Brazilian Real</p>
+        <p>Time Zone: UTC-5, UTC-4, UTC-3, UTC-2</p>
+        <p>Calling Code: +55</p>
+        <p>Internet TLD: .br</p>
+    </section>
+
+    <section id="Weather">
+        <h2>Weather</h2>
+        <div class="weather">
+            <img src="images/weather.png" alt="Weather" class="weather icon">
+        </div>
+        <p>Temperature: <span id="temperature">5°C</span></p>
+        <p>Conditions: Partly Cloudy</p>
+        <p>Wind Speed: <span id="wind-speed">20 km/h</span></p>
+        <p>Wind Chill: <span id="wind-chill">4.8°C</span></p>
+    </section>
+
+    <footer>
+        <div class="footer-item">©️<span id="currentyear"></span> ⚽️</div>
+        <div class="footer-item">Jessica Orme ⚽️</div>
+        <div class="footer-item">USA</div>
+        <div class="footer-item">Last Modification: <span id="last-modified"></span></div>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+    </script>
+    <script>
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+    <script>
+        // JavaScript for calculating wind chill factor
+        function calculateWindChill(temperature, windSpeed) {
+            if ((temperature <= 10 && windSpeed > 4.8) || (temperature <= 50 && windSpeed > 3)) {
+                // Metric (Celsius): Wind Chill Formula (°C)
+                return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
+            } else {
+                return "N/A";
+            }
+        }
+
+        // Update the Wind Chill on page load
+        window.onload = function () {
+            const temperature = parseFloat(document.getElementById("temperature").textContent);
+            const windSpeed = parseFloat(document.getElementById("wind-speed").textContent);
+
+            const windChill = calculateWindChill(temperature, windSpeed);
+
+            document.getElementById("wind-chill").textContent = windChill === "N/A" ? windChill : `${windChill.toFixed(1)}°C`;
+        };
+    </script>
+</body>
+
+</html>
