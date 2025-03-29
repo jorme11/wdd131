@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131-Dynamic Web Fundamentals-Jessica Orme-Week02">
+    <meta name="author" content="Jessica Orme">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="title">Temple</h1>
+            <button class="hamburger" id="hamburger-btn">&#9776;</button>
+            <nav>
+                <button id="old">Old Temples</button>
+                <button id="newer">New Temples</button>
+                <button id="large">Large Temples</button>
+                <button id="small">Small Temples</button>
+            </nav>
+        </div>  
+    </header>
+
+    <main>
+        <div>
+            <h2>Home</h2>
+        </div>
+
+            <div class="res-grid"></div>
+    </main>
+
+    <footer>
+        <div class="footer-item">©️<span id="currentyear"></span>⚽️</div>
+        <div class="footer-item">Jessica Orme⚽️</div>
+        <div class="footer-item">USA</div>
+        <div class="footer-item">Last Modification: <span id="last-modified"></span></div>
+    </footer>
+
+    <script src="scripts/filtered-temples.js"></script>
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+</body>
+</html>

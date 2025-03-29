@@ -1,0 +1,83 @@
+/* Large screen styles */
+@media screen and (min-width: 768px) {
+
+    header {
+        background-color: #452b45;
+    }
+
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        margin-left: 20px;
+    }
+
+    nav button {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 18px;
+        border-radius: .5rem;
+        padding: .5rem;
+    }
+
+    nav button a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        background-color: black;
+    }
+    
+    nav button:hover {
+        color: goldenrod;
+        background-color: #333;
+        border-radius: 5px;
+    }
+    
+    main {
+        padding: 40px;
+    }
+
+    .res-grid {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding:20px;
+        justify-items:center;
+    }
+
+    .res-grid section {
+        border: 3px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        background-color: #f9f9f9;
+        border-radius: 1rem;
+    }
+
+    .res-grid img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-item {
+        margin-right: 20px;
+    }
+
+    .footer-item:last-child {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}

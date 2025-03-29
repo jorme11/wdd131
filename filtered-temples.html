@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131-Dynamic Web Fundamentals-Jessica Orme-Week02">
+    <meta name="author" content="Jessica Orme">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="temples.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="title">Temple</h1>
+            <nav>
+                <button class="hamburger" id="hamburger-btn">&#9776;</button>
+                <ul class="menu" id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">New</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script src="script/temples.js"></script>
+
+    <main>
+        <div>
+            <h2>Home</h2>
+        </div>
+
+            <div class="image-grid">
+                <figure>
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <figcaption>Bountiful Utah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <figcaption>Bountiful Utah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <figcaption>Bountiful Utah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <figcaption>Bountiful Utah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <figcaption>Bountiful Utah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <figcaption>Bountiful Utah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                <figcaption>Bountiful Utah</figcaption>
+                 </figure>
+                <figure>
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <figcaption>Bountiful Utah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <figcaption>Bountiful Utah</figcaption>
+                </figure>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-item">©️<span id="currentyear"></span>⚽️</div>
+        <div class="footer-item">Jessica Orme⚽️</div>
+        <div class="footer-item">USA</div>
+        <div class="footer-item">Last Modification: <span id="last-modified"></span></div>
+    </footer>
+
+    <script src="scripts/temples.js"></script>
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
