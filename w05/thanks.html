@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Submission Completion">
+    <meta name="author" content="Jessica Orme">
+    <title>HTML5 Thanks Page Jessica Orme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <script src="scripts/thanks.scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <h2>Product Review Successfully Submitted</h2>
+        <p>Thanks for submitting your product review.</p>
+    </main>
+
+    <footer>
+        <div class="footer-item">©️<span id="currentyear"></span>⚽️</div>
+        <div class="footer-item">Jessica Orme⚽️</div>
+        <div class="footer-item">USA</div>
+        <div class="footer-item"><br>Last Modification: <span id="last-modified"></span></div>
+    </footer>
+    
+    <script src="scripts/scripts.js" defer></script>
+    
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+
+    <script src="scripts/thanks.scripts.js"></script>
+</body>
+
+</html>

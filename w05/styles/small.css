@@ -1,0 +1,125 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: #452b45;
+    color: white;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+nav {
+    background-color: #666;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: solid 1px #333;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    padding: 2em;
+    flex: 1;
+}
+
+form {
+    background-color:#ddd;
+    padding: 1em;
+    text-align: left    ;
+}
+
+/* Apply this CSS to all form elements */
+form input[type="text"],
+form input[type="date"],
+form select,
+form textarea, 
+form input[type="submit"]{
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #7a4b00;
+    color: white;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+    background-color: #7a4b00;
+    color: white;
+    margin: 0 10px;
+}
+
+.footer-item:last-child {
+    flex: 1 1 100%;
+    text-align: center;
+}
