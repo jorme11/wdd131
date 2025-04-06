@@ -1,0 +1,60 @@
+header {
+    color: #1B4F4D;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+color: #313E71;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+}
+
+h3 {
+color: #1B4F4D;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.faq-item {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Default font for body text */
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a {
+color: #1B4F4D;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        font-size: 18px;
+    }
+
+    .faq-item {
+        font-size: 14px;
+    }
+}
