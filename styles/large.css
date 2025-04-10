@@ -1,0 +1,66 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header,
+    nav,
+    main,
+    footer {
+        margin: auto;
+
+        flex-wrap:nowrap;
+    }
+
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+
+
+
+    /*----------- NAVIGATION --------------*/
+
+
+
+    /*----------- MAIN --------------*/
+
+
+
+    /*----------- FOOTER --------------*/
+
+}
+
+/* end of media query */
+
+p {
+    text-align: center;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #7a4b00;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-item {
+    margin-bottom: 1px;
+    background-color: #7a4b00;
+    color: white;
+    margin: 0 10px;
+}
+
+.footer-item:last-child {
+    flex: 1 1 100%;
+    text-align: center;
+}
