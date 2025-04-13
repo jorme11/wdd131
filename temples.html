@@ -8,7 +8,6 @@
     <meta name="author" content="Jessica Orme">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="temples.js" defer></script>
 
 </head>
 <body>
@@ -17,13 +16,14 @@
             <h1 class="title">Temple</h1>
             <nav>
                 <button class="hamburger" id="hamburger-btn">&#9776;</button>
-                <ul class="menu" id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Old</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Large</a></li>
-                    <li><a href="#">New</a></li>
-                </ul>
+            <ul class="menu" id="menu">
+                <li><a href="#" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+
             </nav>
         </div>
     </header>
@@ -45,31 +45,31 @@
                     <figcaption>Bountiful Utah</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah" loading="lazy">
                     <figcaption>Bountiful Utah</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah" loading="lazy">
                     <figcaption>Bountiful Utah</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah" loading="lazy">
                     <figcaption>Bountiful Utah</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah" loading="lazy">
                     <figcaption>Bountiful Utah</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah" loading="lazy">
                 <figcaption>Bountiful Utah</figcaption>
                  </figure>
                 <figure>
-                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah" loading="lazy">
                     <figcaption>Bountiful Utah</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah">
+                    <img src="images/bountiful_temple_lds.jpeg" alt="Bountiful Utah" loading="lazy">
                     <figcaption>Bountiful Utah</figcaption>
                 </figure>
             </div>
@@ -82,10 +82,7 @@
         <div class="footer-item">Last Modification: <span id="last-modified"></span></div>
     </footer>
 
-    <script src="scripts/temples.js"></script>
-    <script>
-        document.getElementById("currentyear").textContent = new Date().getFullYear();
-        document.getElementById("last-modified").textContent = document.lastModified;
-    </script>
+    <script src="scripts/temples.js" defer></script>
+
 </body>
 </html>
