@@ -69,11 +69,11 @@ main {
 }
 
 .left-decor {
-    background-image: url(../project/images/left_background_image.webp);
+    background-image: url(/project/images/left_background_image.webp);
 }
 
 .right-decor {
-    background-image: url(../project/images/right_background_image.webp);
+    background-image: url(/project/images/right_background_image.webp);
 }
 
 .left-decor, .right-decor {
