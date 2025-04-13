@@ -65,3 +65,14 @@ footer {
     flex: 1 1 100%;
     text-align: center;
 }
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+fieldset label {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}

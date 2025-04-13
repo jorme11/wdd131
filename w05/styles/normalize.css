@@ -275,3 +275,14 @@ template {
 [hidden] {
     display: none;
 }
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+fieldset label {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}

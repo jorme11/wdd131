@@ -55,13 +55,14 @@ nav ul {
 
 nav ul li {
     border-bottom: solid 1px #333;
+    margin-bottom: 0.75rem;
 }
 
 nav ul li a {
     display: block;
     background-color: #444;
     color: #eee;
-    padding: .5rem 0;
+    padding: 1rem 0;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
@@ -122,4 +123,15 @@ footer {
 .footer-item:last-child {
     flex: 1 1 100%;
     text-align: center;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+fieldset label {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }

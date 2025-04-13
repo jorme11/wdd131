@@ -1,17 +1,15 @@
-<script>
-  // Run after the page loads
-    document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
+  let reviewCount = localStorage.getItem("reviewCount");
 
-        let reviewCount = localStorage.getItem("reviewCount");
-    reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+  if (!reviewCount) {
+    reviewCount = 0;
+  }
 
-    reviewCount++;
+  reviewCount++;
+  localStorage.setItem("reviewCount", reviewCount);
 
-    localStorage.setItem("reviewCount", reviewCount);
-
-    const counterDisplay = document.getElementById("counter");
-    if (counterDisplay) {
-        counterDisplay.textContent = `You’ve submitted ${reviewCount} review(s).`;
-    }
-  });
-</script>
+  // Optional: display it to the user
+  const message = document.createElement("p");
+  message.textContent = `You have submitted ${reviewCount} review(s).`;
+  document.querySelector("main").appendChild(message);
+});

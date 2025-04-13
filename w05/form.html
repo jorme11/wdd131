@@ -3,18 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="Product Review" content="Fill Out Product Review Form">
+    <meta name="description" content="Fill Out Product Review Form">
     <meta name="author" content="Jessica Orme">
     <title>Product Review by Jessica Orme</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- STYLE SHEETS -->
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/small.css" rel="stylesheet">
-    <link href="styles/medium.css" rel="stylesheet">
-    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="styles/normalize.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/normalize.css"></noscript>
+    <link rel="preload" href="styles/small.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/small.css"></noscript>
+    <link rel="preload" href="styles/medium.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/medium.css"></noscript>
+    <link rel="preload" href="styles/large.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/large.css"></noscript>
     <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
-    <script src="scripts/scripts.js" defer></script>
-    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
 </head>
 
 <body>
@@ -26,52 +30,54 @@
         <div class="center-container">
             <form method="get" action="thanks.html">
 
-            <fieldset>
-                <div><label for="productSelect">Product Name</label></div>
-                <select name="subject" id="productSelect">
-                    <option value="">Choose a Product...</option>
-                </select>
-            </fieldset>
+                <fieldset>
+                    <legend>Product Name <span class="required">*</span></legend>
+                    <label for="productSelect">Choose a Product:</label>
+                    <select name="subject" id="productSelect" required>
+                        <option value="">Choose a Product...</option>
+                    </select>
+                </fieldset>
 
-            
-            <fieldset>
-                <legend>Overall Rating</legend>
-                <label><input type="radio" name="rating" value="1"> ✩ </label>
-                <label><input type="radio" name="rating" value="2"> ✩✩</label>
-                <label><input type="radio" name="rating" value="3"> ✩✩✩</label>
-                <label><input type="radio" name="rating" value="4"> ✩✩✩✩</label>
-                <label><input type="radio" name="rating" value="5"> ✩✩✩✩✩</label>
-            </fieldset>
+                <fieldset>
+                    <legend>Overall Rating <span class="required">*</span></legend>
+                    <label><input type="radio" name="rating" value="1" required> ✩ </label>
+                    <label><input type="radio" name="rating" value="2"> ✩✩</label>
+                    <label><input type="radio" name="rating" value="3"> ✩✩✩</label>
+                    <label><input type="radio" name="rating" value="4"> ✩✩✩✩</label>
+                    <label><input type="radio" name="rating" value="5"> ✩✩✩✩✩</label>
+                </fieldset>
 
-            <fieldset>
-                <label for="installDate">Date of Installation:</label><br>
-                <input type="date" name="completeData" id="installDate">
-            </fieldset>
+                <fieldset>
+                    <legend>Date of Installation <span class="required">*</span></legend>
+                    <label for="installDate">Select Date:</label>
+                    <input type="date" name="completeDate" id="installDate" required>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Useful Features <span class="required">*</span></legend>
+                    <p>(Check all that apply)</p>
+                    <label><input type="checkbox" name="features" value="durability"> Durability</label><br>
+                    <label><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label><br>
+                    <label><input type="checkbox" name="features" value="performance"> Performance</label><br>
+                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                </fieldset>
 
-            <fieldset>
-                <legend>Which features did you find useful in the product?<br>(Check all that apply)</legend>
-                <label><input type="checkbox" name="durability" value="yes"> Durability</label><br>
-                <label><input type="checkbox" name="ease of use" value="yes"> Ease of Use</label><br>
-                <label><input type="checkbox" name="performance" value="yes"> Performance</label><br>
-                <label><input type="checkbox" name="design" value="yes"> Design</label>
-            </fieldset>
+                <fieldset>
+                    <legend>Written Review (Optional)</legend>
+                    <label for="writtenReview">Your Review:</label><br>
+                    <textarea name="writtenReview" id="writtenReview" rows="4" cols="40"></textarea>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Your Name (Optional)</legend>
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name">
+                </fieldset>
 
-            <fieldset>
-                <label for="writtenReview">Written Review (Optional)</label><br>
-                <textarea name="writtenReview" id="writtenReview" rows="4" cols="40"></textarea>
-            </fieldset>
-
-            <fieldset>
-                <label for="name">Your Name (Optional)</label><br>
-                <input type="text" name="name" id="name">
-            </fieldset>
-
-            <input type="submit" value="Post Review">
-        </form>
-    </div>
-</main>
+                <input type="submit" value="Post Review" aria-label="Submit Product Review Form">
+            </form>
+        </div>
+    </main>
 
     <footer>
         <div class="footer-item">©️<span id="currentyear"></span>⚽️</div>
@@ -84,7 +90,6 @@
         document.getElementById("currentyear").textContent = new Date().getFullYear();
         document.getElementById("last-modified").textContent = document.lastModified;
     </script>
-
 </body>
 
 </html>
