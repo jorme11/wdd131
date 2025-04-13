@@ -1,0 +1,219 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 1rem 2rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #1B4F4D;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1B4F4D;
+    font-weight: 600;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.decor {
+    flex: 1;
+    min-width: 100px;
+    height: 300px;
+    background-color: #eee;
+    /* Placeholder for images */
+    background-size: cover;
+    background-position: center;
+}
+
+.left-decor {
+    background-image: url(/images/left_background_image.webp);
+}
+
+.right-decor {
+    background-image: url(/images/right_background_image.webp);
+}
+
+.left-decor, .right-decor {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.welcome {
+    flex: 2;
+    max-width: 600px;
+    text-align: center;
+    font-family: "Shadows Into Light", cursive;
+}
+
+.welcome h2 {
+    color: #313E71;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    margin-bottom: 0.8rem;
+}
+
+/* Footer */
+footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .nav-links li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .nav-links li:last-child {
+        margin-bottom: 0;
+        }
+
+    .hamburger {
+        display: block;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .decor {
+        display: none;
+    }
+
+}
+
+.services {
+    padding: 2rem;
+    font-family: "Shadows Into Light", cursive;
+}
+
+.shared-style {
+    margin-bottom: 1rem;
+    border-left: 4px solid #1B4F4D;
+    padding-left: 1rem;
+}
+
+.minimum {
+    margin-bottom: 1rem;
+    border-left: 4px solid #1B4F4D;
+    padding-left: 1rem;
+}
+
+.additional {
+    margin-bottom: 1rem;
+    border-left: 4px solid #1B4F4D;
+    padding-left: 1rem;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.service-item,
+.faq-item {
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #1B4F4D;
+    padding-left: 1rem;
+    font-family: "Shadows Into Light", cursive;
+}
+
+.service-item h3,
+.faq-item h3 {
+    font-size: 1.25rem;
+    color: #1B4F4D;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.caption {
+    font-family: "Shadows Into Light", cursive;
+    margin-top: 0.5rem;
+    color: #1B4F4D;
+    font-size: 1rem;
+}

@@ -58,3 +58,24 @@ a:hover {
         font-size: 14px;
     }
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item p {
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 8px;
+    font-size: 1rem;
+}
